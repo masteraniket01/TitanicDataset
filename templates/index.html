@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>LIFE INSURANCE CORPORATION OF INDIA</title>
+	<style>
+		body {
+			background-image: url("https://www.governanceinstitute.com.au/media/886935/shutterstock_1058124268_sd_600x300.gif");
+			background-repeat: no-repeat;
+			background-size: cover;
+            text-align: right;
+		}
+
+        .button[type="submit"] {
+            background-color: #336fca;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button[type="submit"]:hover {
+            background-color: #254a68;
+        }
+	</style>
+</head>
+<body>
+
+<h1>April 15, 1912: Sinking Of The Titanic</h1>
+<h2>Prediction the survival of Titanic Passenger</h2>
+<form method="GET" action ="/predict_Person_servived">
+
+    <label> Gender: </label>
+    <label for = "Gender">
+    <select name = "Gender" id="Gender">
+            <option value = "Gender">Male</option>
+            <option value = "Gender">Female</option>
+                     
+   
+    </select>
+
+
+    <br>
+    <br>
+
+    <label><b>Age:</b></label>
+    <input type = "text" name = "Age">
+    </select>
+
+    <br>
+    <br>
+
+    <label><b>Passenger class:</b></label>
+   <input type = "text" name = "Pclass">
+   </select>
+
+    
+    <br>
+    <br>
+
+    <label><b>Siblings/Spouses:</b></label>
+    <input type = "text" name = "SibSp">
+    </select>
+
+    
+    <br>
+    <br>
+
+    <label><b>Parch:</b></label>
+    <input type = "text" name = "Parch">
+    </select>
+
+    <br>
+    <br>
+
+    <label><b>Fare($):</b></label>
+    <input type = "text" name = "Fare">
+    </select>
+
+
+    <br>
+    <br>
+
+    <label><b>Embarked:</b></label>
+    <input type = "text" name = "Embarked">
+    </select>
+
+
+    <br>
+    <br>
+    <input class='button' type="submit" value="SUBMIT">
+
+    <br>
+    <p> <b> {{prediction}} </b></p>
+<p><b>Training accuracy: 81.08%</b></p>
+<p><b>Testing accuracy:  78.98%</b></p>
+
+</form>
+    
+</body>
+</html>
